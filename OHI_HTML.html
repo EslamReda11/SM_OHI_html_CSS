@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="OHI_CSS.css">
+        <title>Obour Students Management</title>
+        <!-- restore fonts online link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet" />
+
+    </head>
+
+    <body dir="ltr">
+        <header>
+            <a href="https://www.ohie.edu.eg/ar" target="_blank" title="go to OHI"><img src="Images/logoOHI.jpg" alt="will not show"/> </a>
+            <p class="h1">"Obour Higher Institute For Engineering And Technology"</p>
+        </header>
+
+        <nav>
+            <a href="https://www.ohie.edu.eg/ar" target="_blank" title="go to OHI"><img src="Images/logoOHI.ico" alt="will not show" class="OHIico" /></a>
+            <p class="Sup">Supervisor:</p>
+
+            <div class="description-DR">
+            Dr.Safaa
+            <div class="description-text-DR">
+                <img src="Images/safaa.jpg" alt="will not show" width="280px" height="400px">   <br> 
+                info :Professor at 'ASU' , former head of computer department in science college and currently Head of the Educational Technology Department 
+                , Director and founder of the E-Learning Center and the Quality Unit and 'IT' at 'ASU' , She holds many awards including the Ideal Mother Award from the 'WHO' ,Supervising more than 60 scientific and research papers.</div>
+            </div>
+
+            <p class="Web">Website</p>
+            <p class="by">By:</p>
+
+            <div class="description-Eng">
+            Eng.Eslam
+            <div class="description-text-Eng"> 
+                <!-- <img src="Images/eslam.jpg" alt="will not show" width="250px" height="310px">   <br>   -->
+                <img src="Images/eslam2.jpg" alt="will not show" width="240px" height="330px">   <br>
+                info : 5th Year At 'OHI' For Engineering and Technology, Department of Electricity, specializing in Computers.</div>
+            </div>
+
+            <p class="r">Reda</p>
+            <P class="E">ESLAM</P>
+            <a href="https://www.facebook.com/ohi1996/" target="_blank" title="go to OHI"><img src="Images/facebook.ico" alt="will not show" class="FACEico" /></a>
+        </nav>
+
+        <div class="A_M">
+            <form method="POST">
+                <aside>
+                    <div id="div_A"> 
+                        <!--Control panel for managing students-->   
+                        <h3>Students Management</h3>                                                                                                                              
+                        <a href="https://www.ohie.edu.eg/ar" target="_blank" title="go to OHI"><img src="Images/imageOHI.png" alt="will not show" class="LogoSide"/></a>                 <br>
+                        <label for="ID" class="L_ID">ID</label>
+                        <input type="number" name="ID" id="ID" class="inputID" placeholder="random ID" maxlength="11" required readonly/>  
+                        <button type="button" onclick="generateRandomNumber()" class="GRN_ID" ><s style="font-weight:bold;" title="Click to add a random ID">&#8629;</s></button> <br><br>   
+
+                        <label for="First_Name">First_Name</label>
+                        <input type="text" name="First_Name" id="First_Name" class="inputFirst_Name" placeholder="enter your first name" maxlength="20" required/>                <br><br>
+
+                        <label for="Last_Name">Last_Name</label>
+                        <input type="text" name="Last_Name" id="Last_Name" class="inputLast_Name" placeholder="enter your last name" maxlength="20"/>                             <br><br>
+
+                        <label for="da">Date</label>
+                        <input type="date" id="da" name="Date" class="inputDate" placeholder="Enter your date of birth">                                           <br><br>
+
+                        <label for="Address">Address</label>
+                        <input type="text" name="Address" id="Address" class="inputAddress" placeholder="enter your address" maxlength="50"/>                                     <br><br>
+
+                        <label for="Phone">Phone</label>
+                        <input type="number" name="Phone" id="Phone" class="inputPhone" placeholder="enter number phone" maxlength="15"/>                                         <br><br>
+
+                        <label for="Email">Email</label>
+                        <input type="email" name="Email" id="Email" class="inputEmail" placeholder="enter your email" maxlength="30"/>                                            <br><br>
+
+                        <label for="Specialization">Specialization</label>
+                        <select name="Specialization" id="Specialization" class="inputSpecialization">           
+                            <option value="General" selected>General</option>
+                            <option value="Civil">Civil</option>
+                            <option value="Architecture">Architecture</option>
+                            <option value="Electricity">Electricity</option>
+                            <optgroup label="Electricity">
+                                <option value="Communications">Communications</option>
+                                <option value="Computers">Computers</option> 
+                            </optgroup>
+                        </select>                                                                                                             <br><br>
+
+                        <label class="L_Gender">Gender</label>
+                        <input type="radio" name="Gender" value="Male" id="m" class="inputMale"> 
+                        <label class="L_Male"for="m">Male</label>
+                        <input type="radio" name="Gender" value="Female" id="fe" class="inputFemale">  
+                        <label class="L_Female" for="fe">Female</label>                                                                                                           <br>
+
+                        <button name="ADD" class="buttonADD" title="Add student">ADD</button>
+                        <button name="DELETE" class="buttonDELETE" title="Delete student">Delete</button>                                                             
+                        <button onclick="showWarning()" name="DeleteAllStudents" class="DAS" title="Delete all students from the data base">Delete All</button>          
+                        <button onclick="refreshPage()" name="UPDATE" class="buttonUPDATE" title="Updating data">Update</button>   
+                        <button type="reset" name="CLEAR" class="buttonCLEAR" title="Delete the entered data">Clear</button>                                                      <br><br>  
+                    </div>
+                </aside>
+
+                <main>
+                    <table border="4" class="tbl">
+                        <tr>
+                            <th>ID</th>
+                            <th>First_Name</th>
+                            <th>Last_Name</th>
+                            <th>Date</th>
+                            <th>Address</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>Specialization</th>
+                            <th>Gender</th>
+                        </tr>
+                    </table>
+                </main>
+            </form>
+        </div>
+    </body>
+</html>

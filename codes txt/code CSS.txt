@@ -1,0 +1,468 @@
+            /*restore fonts As a file from the device*/
+            @font-face
+            {
+                font-family: 'RubikLines-Regular';
+                src:url(Fonts/RubikLines-Regular.ttf); 
+            }
+
+            @font-face
+            {
+                font-family: 'BeauRivage';
+                src:url(Fonts/BeauRivage-Regular.ttf); 
+            }
+
+            @font-face
+            {
+                font-family:'RubikDoodleShadow';
+                src:url(Fonts/RubikDoodleShadow.ttf); 
+            }
+
+            @font-face
+            {
+                font-family:'LibreBaskerville';
+                src:url(Fonts/LibreBaskerville-Italic.ttf); 
+            }
+
+            body 
+            {
+                font-family: "Libre Franklin",sans-serif;
+                margin: 0px;
+            }
+
+            header
+            {
+                padding-top:18%;
+                padding-bottom: 0.1%;
+                background-image:url("Images/BG_header.JPEG");
+                background-repeat: no-repeat;
+                background-attachment:scroll;
+                background-size: 100% 100%;   
+            }       
+
+            header a
+            {
+                position: relative;
+                bottom: 260px;
+                left: 10px;
+                cursor: pointer;
+            }
+
+            header .h1 
+            {
+                /* cornflowerblue crimson */
+                color: darkslateblue ;
+                font-family: "Beau Rivage", cursive;
+                font-size: 66px;
+                position: relative;
+                bottom: 510px;
+                left: 200px;
+            }
+
+            nav
+            {
+                position: fixed;
+                font-family:RubikLines-Regular,courier;
+                font-size: x-large;    
+                bottom: 55px;   
+            }
+
+            .OHIico
+            {
+                position:fixed;
+                width: 90px;
+                height: 80px;
+                bottom: 5px;
+                left:540px; 
+            }
+
+            nav .Sup
+            {
+                background-color: red;
+                position:absolute;
+                left: 638px;
+                font-family: "Libre Franklin", sans-serif;
+                text-decoration:underline;
+                bottom: -50px;
+            }
+
+            .description-DR
+            {
+                position: relative;
+                background-color:gray ;
+                bottom: -55px;
+                left: 770px;
+                cursor:alias;
+                width: fit-content;
+                height: fit-content;
+            }
+
+            .description-text-DR
+            {
+                visibility: hidden;
+                width: 800px;
+                height: fit-content;
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 10px;
+                position: absolute;
+                z-index: 1;
+                bottom: 125%;
+                left: 50%;
+                margin-left: -200px;
+                margin-bottom: 15px;
+                opacity: 0;
+                transition: opacity 2s;
+            }
+
+            .description-DR:hover .description-text-DR
+                {
+                visibility: visible;
+                opacity: 20;
+                }
+
+            .E
+            {
+                color: white;
+                position:absolute;
+                font-size:30px;
+                font-style:italic;
+                font-weight: bold;
+                left: 910px;   
+                bottom: -62px;
+                font-family:BeauRivage,courier;
+                text-shadow: -20px 18px 8px red; 
+            }
+
+            nav .Web
+            {
+                background-color: red;
+                position:absolute;
+                left: 1088px;
+                font-family: "Libre Franklin", sans-serif;
+                text-decoration:underline;
+            }
+
+            .by
+            {
+                background-color: red;
+                position:absolute;
+                left: 1185px;
+                font-family: "Libre Franklin", sans-serif;
+                text-decoration:underline;
+            }
+
+            .description-Eng
+            {
+                position: relative;
+                background-color:gray ;
+                bottom: -24px;
+                left: 1224px;
+                cursor:alias;
+            }
+
+            .description-text-Eng
+            {
+                visibility: hidden;
+                width: 280px;
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px;
+                position: absolute;
+                z-index: 1;
+                bottom: 125%;
+                left: 50%;
+                margin-left: -150px;
+                margin-bottom: 15px;
+                opacity: 0;
+                transition: opacity 2s;
+            }
+
+            .description-Eng:hover .description-text-Eng
+                {
+                visibility: visible;
+                opacity: 20;
+                }
+
+            .r
+            {
+                background-color:gray ;
+                position:absolute;
+                bottom: -48px;
+                left: 1360px;
+            }
+
+            .FACEico
+            {
+                position:fixed;
+                width:67px ;
+                height:72px;
+                bottom: 5px;
+                left: 1430px; 
+            }
+
+
+            .A_M
+            {
+                background-image:url("Images/BG_Main.jpg");
+                background-repeat: no-repeat;
+                background-attachment:scroll;
+                background-size:cover;
+                background-position: center;
+                width: 98.38%;
+                float: left;
+                border: solid black;
+                padding: 10px;
+                font-size: 25px;
+                color: white;
+            }
+
+            aside
+            {
+                text-align:center;
+                width: 480px;
+                float: left;
+                clear: both;
+                border:2px solid gray;
+                padding: 10px;
+                font-size: 20px;
+                color: white;
+                background-image:url("Images/BG_Form.jpg");
+                background-repeat: no-repeat;
+                background-attachment:scroll;
+                background-size:cover;
+                background-position: center;
+            }
+
+            h3
+            {
+                color: darkmagenta;
+                text-align: center;
+                font-weight:bold;
+                font-family:RubikDoodleShadow,courier;
+                text-shadow: 20px 20px 16px red ;
+                position: relative;
+                bottom: 15px;
+            }
+
+            .LogoSide
+            {
+                position:relative;
+                width: 334px;
+                height: 332px;
+                bottom: 20px; 
+            }
+
+            label
+            {
+                font-weight:bold;
+                text-shadow: 20px 20px 16px red;
+                position: relative;
+                bottom: 10px;
+                left: -15px;
+                font-family: "LibreBaskerville",sans-serif;
+            }
+
+            .L_ID
+            {
+                position: relative;
+                left: 3px; 
+            }
+
+            input
+            {
+                padding: 5px;
+                border:1.9px solid white;
+                text-align: left;
+                font-size:17px;
+                background-color: darkgrey;
+                color: black;
+                font-weight:bold;
+                bottom: 10px;
+                width: 250px;
+            }
+
+            .inputID
+            {
+                position: relative;
+                left: 84px;
+            }
+
+            .GRN_ID
+            {
+                position: relative;
+                bottom: 10px;
+                border:1.9px solid crimson;
+                font-size:17px;
+                left: 85px; 
+            }
+
+            .inputFirst_Name
+            {
+                position: relative;
+                left: 26px;
+            }
+
+            .inputLast_Name
+            {
+                position: relative;
+                left: 28px;
+            }
+
+            .inputDate
+            {
+                position: relative;
+                left: 60px;
+            }
+
+            .inputAddress
+            {
+                position: relative;
+                left: 47px;
+            }
+
+            .inputPhone
+            {
+                position: relative;
+                left: 54px;
+            }
+
+            .inputEmail
+            {
+                position: relative;
+                left: 54px;
+            }
+
+            .inputSpecialization
+            {
+                position: relative;
+                left: 17px;
+                height: 34px;
+                bottom: 10px;
+                width: 55%;
+                padding: 5px;
+                border:1.9px solid white;
+                text-align: left;
+                font-size:17px;
+                background-color: darkgrey;
+                color: black;
+                font-weight:bold;
+            }
+            
+            .L_Gender
+            {
+                position: relative;
+                left: 8px;
+            }
+
+            .inputMale
+            {
+                position: relative;
+                left: -20px;
+                cursor: pointer;
+            }
+
+            .L_Male
+            {
+                position: relative;
+                left: -140px;
+                font-family:RubikDoodleShadow,courier;
+                text-shadow: 00px 00px 0px red;
+            }
+
+            .inputFemale
+            {
+                position: relative;
+                bottom:34px;
+                left: 135px;
+                cursor: pointer;
+            }
+
+            .L_Female
+            {
+                position: relative;
+                bottom:34px;
+                left: 15px;
+                font-family:RubikDoodleShadow,courier;
+                text-shadow: 00px 00px 0px red;
+            }
+
+            button
+            {
+                padding: 5px;
+                border:1.9px solid white;
+                font-size:17px;
+                font-weight: bold;
+                background-color: darkgray;
+                color: black;
+                cursor: pointer;
+            }
+
+            .buttonADD
+            {
+                position: relative;
+                left:-50px;
+            }
+
+            .buttonDELETE
+            {
+                position: relative;
+                left:-25px;
+            }
+            
+
+            .buttonCLEAR
+            {
+                position: relative;
+                left: 50px;
+            }
+
+            .buttonUPDATE
+            {
+                position: relative;
+                left: 25px;   
+            }
+
+            .DAS
+            {
+                position: relative;
+                /* left: 65px;
+                top: -20px;  */
+                
+            }
+
+            main 
+            {
+                float: right;
+                border: 10px solid gray;
+                padding: 3px;
+                border-top:10px  maroon;
+                position: static;
+                left: 20px;
+                border-style:ridge;
+            }
+
+            .tbl
+            {
+                font-size: 20px;
+                text-align: center;
+                margin:3px;
+            }
+
+            .tbl th
+            {
+                color: red;
+                font-size:20px;
+                padding:2px;
+                width : 88px;
+
+            }
+
+            td
+            {
+                height: 50px;
+                word-break:break-all;
+            }
